@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tính Diện tích và Chu vi hình tròn</h1>
+<table>
+    <tr>
+        <th>Nhập bán kính</th>
+        <th>Diện tích</th>
+        <th>Chu vi</th>
+    </tr>
+    <tr>
+        <td><input id="ipR" type="number" min="0"></td>
+        <td><button id="butS" onclick="circleAcreage()">Diện tích</button></td>
+        <td><button id="butC" onclick="circumference()">Chu vi</button></td>
+    </tr>
+    <tr>
+        <td colspan="3"><p id="result"></p></td>
+    </tr>
+</table>
+<script>
+    let pi= 3.14
+    let S,C;
+    function circleAcreage(){
+        let r=+document.getElementById('ipR').value;
+       S=(2*r)*pi;
+       document.getElementById('result').innerHTML= `Diện tích hình tròn là : ${S.toFixed(1)}`
+    }
+    function circumference(){
+        let r=+document.getElementById('ipR').value;
+        C=(r*r)*pi;
+        document.getElementById('result').innerHTML= `Chu vi hình tròn là: ${C.toFixed(1)} `
+    }
+</script>
+</body>
+</html>
