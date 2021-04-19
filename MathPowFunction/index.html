@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Math Pow Number</h1>
+<hr>
+<input type="number" min="0" oninput="powNumber(this.value)" onchange="powNumber(this.value)">
+<p id="rs"></p>
+<script>
+    function powNumber(n){
+        n=parseFloat(n)
+        document.getElementById('rs').innerHTML= `${n} mũ 2: ${Math.pow(n,2)}`;
+    }
+</script>
+</body>
+</html>
