@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let length = 2
+
+    function replaceNumber() {
+        for (let i = 0; i < length; i++) {
+            a.push(+prompt("Nhập 2 giá trị:"))
+        }
+        document.writeln(`a = ${a} <br>`)
+        a.reverse();
+        document.writeln(`Đổi chỗ a = ${a}  `);
+    }
+    replaceNumber();
+</script>
+</body>
+</html>
