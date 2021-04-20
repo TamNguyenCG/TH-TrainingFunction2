@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = ["Phantom", "Ferrari", "Lamborghini", "Mazda", "Mercedes", "Mercedes", "Mazda","Honda","Toyota","Toyota"];
+    let count = 0;
+    let check = false;
+    let car = prompt("Nhập hãng xe bất kỳ: ")
+    for (let i = 0; i < arr.length; i++) {
+        if (car === arr[i]) {
+            check = true;
+            count++;
+        }
+    }
+    if (check) {
+        alert(`${car} xuất hiện ${count} lần`)
+    } else {
+        alert(`${car} không có trong list`)
+    }
+
+</script>
+</body>
+</html>
